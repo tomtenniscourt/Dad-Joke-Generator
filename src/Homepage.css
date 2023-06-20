@@ -1,0 +1,65 @@
+.homepage-text {
+    font-size: 20px;
+}
+
+span {
+    color: #ff9900;
+    font-weight: bold;
+}
+.joke-border {
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    margin: 100px;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color: turquoise;
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+    }
+
+.jokeText {
+font-family: 'Courier New', cursive;
+font-size: 30px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+button {
+width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 30px;
+    padding: 16px 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.jokeGenerator {
+width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 30px;
+    padding: 16px 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+button:hover {
+    background-color: #ffcc66;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
