@@ -103,7 +103,7 @@ Challenges
 
 I stuggled very much with the saved page and its associated functions - however most chalenging was probably getting the check boxes applied to each joke to listen to only their joke, and not the rest of the jokes. For example, for a while, everytime I clicked on one check box, they would all get marked. Furthermore, when this issue was fixed, I was still unable to only delete the ones that had been marked. 
 
-Adding sound bites were also very challenging. Both this and adding additional content such as anothe rAPI attempted once again when I readdress this project.
+Adding sound bites were also very challenging. Both this and adding additional content such as another API will be attempted when I readdress this project.
 
 I faced some difficulty with CSS styling as well.
 
