@@ -128,10 +128,15 @@ The App component
 -	Renders the main structure of the application inside a <div> element with the class name "App".
 -	Renders the NavBar component to display the navigation bar.
 -	Sets up the routing for different pages using the Routes and Route components.
+
 o	The <Route> components define the path and the corresponding component to render for each page.
+
 o	The element prop of each <Route> component specifies the component to render when the path matches.
+
 o	The path prop specifies the URL path to match for each page.
+
 o	The element prop passes the savedJokes state and setSavedJokes function as props to the respective components.
+
 -	The Homepage component is rendered when the path is /, passing the savedJokes state and setSavedJokes function as props.
 -	The Favourites component is rendered when the path is /Favourites, passing the savedJokes state and setSavedJokes function as props.
 -	The AdditionalContent component is rendered when the path is /AdditionalContent, passing only the setSavedJokes function as a prop.
@@ -149,17 +154,26 @@ The Homepage component:
 
 -	Declares the joke state variable and the setJoke function using the useState hook. It initializes joke as an empty string.
 -	Defines the generateJoke function, which fetches a random dad joke from the "https://icanhazdadjoke.com/" API.
+
 o	It makes a GET request to the API, specifying the "Accept: application/json" header to receive the response in JSON format.
+
 o	The response is converted to JSON using the response.json() method.
+
 o	The joke is extracted from the response data and stored in the joke state using the setJoke function.
+
 -	Defines the saveJoke function, which adds the current joke to the savedJokes state.
+
 o	It creates a new array by spreading the existing savedJokes array and adding the current joke.
+
 o	The setSavedJokes function is called with the new array to update the state.
+
 -	Renders the main structure of the homepage inside a <div> element with the class name "page".
 -	Displays the page heading and introductory text.
 -	Renders a button with the class name "jokeGenerator", which triggers the generateJoke function when clicked.
 -	Checks if a joke exists (joke &&), and if so, renders the joke within a <div> element with the class name "joke-border".
+
 o	The joke text is displayed inside a <p> element with the class name "jokeText".
+
 o	Renders a button that calls the saveJoke function when clicked.
 
 Favourites.js
@@ -178,36 +192,62 @@ The Favourites component:
 -	Declares the editingJoke state variable and the setEditingJoke function using the useState hook. It initializes editingJoke as an empty string.
 -	Defines the handleNewJokeChange function, which updates the newJoke state when the input field for adding a new joke changes.
 -	Defines the saveNewJoke function, which adds the new joke to the savedJokes state.
+
 o	It checks if the trimmed newJoke is not an empty string.
+
 o	If it's not empty, it creates a new array by spreading the existing savedJokes array and adding the new joke.
+
 o	The setSavedJokes function is called with the new array to update the state.
+
 o	The newJoke state is reset to an empty string.
+
 -	Defines the handleCheckboxChange function, which handles the selection or deselection of jokes using checkboxes.
+
 o	It checks if the checkedJokes array already includes the index of the current joke.
+
 o	If the index is already present, it filters out the index from the checkedJokes array.
+
 o	If the index is not present, it adds the index to the checkedJokes array.
+
 -	Defines the handleRemoveSelected function, which removes the selected jokes from the savedJokes state.
+
 o	It filters out the jokes whose indices are included in the checkedJokes array.
+
 o	The setSavedJokes function is called with the filtered array to update the state.
+
 o	The checkedJokes state is reset to an empty array.
+
 -	Defines the handleRemoveAll function, which removes all jokes from the savedJokes state.
+
 o	The setSavedJokes function is called with an empty array to clear the state.
+
 o	The checkedJokes state is reset to an empty array.
+
 -	Defines the handleEditJoke function, which sets the editingJoke state to the index of the joke being edited.
 -	Defines the handleEditingJokeChange function, which updates the value of the joke being edited in the savedJokes state.
+
 o	It creates a new array by spreading the existing savedJokes array.
+
 o	The new value is assigned to the element at the index editingJoke.
+
 o	The setSavedJokes function is called with the new array to update the state.
+
 -	Defines the handleSaveJoke function, which clears the editingJoke state, indicating that the joke editing is complete.
 -	Renders the main structure of the favorites page inside a <div> element with the class name "Favourites".
 -	Renders an input field for adding a new joke, with the handleNewJokeChange function handling the value change.
 -	Renders a button with the class name "save-button", which triggers the saveNewJoke function when clicked.
 -	Checks if there are any saved jokes (savedJokes.length > 0), and if so, renders them.
+
 o	Iterates over the savedJokes array using the map function.
+
 o	For each joke, renders a list item (<li>) with a checkbox, the joke text, and buttons for editing or deleting the joke.
+
 o	The checked attribute of the checkbox is set based on whether the checkedJokes array includes the current index.
+
 o	If the editingJoke state matches the current index, it renders an input field for editing the joke text and a button to save the changes.
+
 o	If the editingJoke state does not match, it renders the joke text and a button to initiate editing.
+
 -	Renders buttons to remove selected jokes (handleRemoveSelected) or remove all jokes (handleRemoveAll).
 
 
@@ -238,4 +278,4 @@ I will want to include a second API function in one of the empty pages I have in
 
 
 
-![image](https://github.com/tomtenniscourt/Dad-Joke-Generator/assets/127535435/9fd67618-01d6-491b-b0ec-251bd0f52e1c)
+
