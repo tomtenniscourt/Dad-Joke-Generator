@@ -5,7 +5,7 @@ ReadMe Project Two: API 'Dad Jokes'
 
 Description
 
-This is a simple app that allows users to randomly generate one of 5,000 'dad jokes' from an API. If the user likes the joke, they can save them to a list featured on another page within the app (called 'Saved') or simply generate a new joke to replace it. When the User navigates to the 'Saved' page, they are presented with a list of all the jokes they have saved from the previous page. 
+This is a simple app that allows users to randomly generate one of 5,000 'dad jokes' from an API. If the user likes the joke, they can save it to a list featured on another page within the app (called 'Saved') or simply generate a new joke to replace it. When the User navigates to the 'Saved' page, they are presented with a list of all the jokes they have saved from the previous page. 
 
 The User can also upload their own joke to this page and edit both the randomly generated saved joke and their own if they so choose. 
 
@@ -18,7 +18,7 @@ TO BE UPDATED ONCE DEPLOYED
 
 Timeframe & Working Team
 
-The game was entirely worked on by me. Occasionally I would have a second pair of eyes look over certain sections to help debug and find where certain issues were, however this was minimal. 
+The game was entirely worked on by me over approximately a week. Occasionally I would have a second pair of eyes look over certain sections to help debug and find where certain issues were, however this was minimal. 
 
 
 Technologies Used
@@ -63,7 +63,7 @@ User Stories:
 -	As a user, I should be able to generate a random joke
 -	As a user, I should be able to save a joke I like to the 'Saved' page
 -	As a user, I should be able to replace the generated joke with another one
--	As a user, I should be able to view my saved jokes on a seperate page
+-	As a user, I should be able to view my saved jokes on a separate page
 -	As a user, I should be able to upload my own joke to the 'Saved' page list
 -	As a user, I should not be able to upload a blank joke
 -	As a user, I should be able to remove individual, several, or all jokes from the 'Saved' page
@@ -124,7 +124,7 @@ This file serves as the entry point of the application. It imports necessary dep
 
 The App component
 
--	Declares the savedJokes state variable and the setSavedJokes function using the useState hook. It initializes savedJokes as an empty array.
+-	Declares the savedJokes state variable and the setSavedJokes function using the useState hook. It initialises savedJokes as an empty array.
 -	Renders the main structure of the application inside a <div> element with the class name "App".
 -	Renders the NavBar component to display the navigation bar.
 -	Sets up the routing for different pages using the Routes and Route components.
@@ -144,7 +144,7 @@ o	The element prop passes the savedJokes state and setSavedJokes function as pro
 
 Homepage.js
 
-This file contains the component responsible for rendering the homepage of the application. It displays a random dad joke and provides options to save jokes to the favorites page.
+This file contains the component responsible for rendering the homepage of the application. It displays a random dad joke and provides options to save jokes to the favourites page.
 
 -	The useState hook is imported from React to manage the state of the joke.
 -	The CSS styles from Homepage.css are imported to style the component.
@@ -152,7 +152,7 @@ This file contains the component responsible for rendering the homepage of the a
 
 The Homepage component:
 
--	Declares the joke state variable and the setJoke function using the useState hook. It initializes joke as an empty string.
+-	Declares the joke state variable and the setJoke function using the useState hook. It initialises the joke as an empty string.
 -	Defines the generateJoke function, which fetches a random dad joke from the "https://icanhazdadjoke.com/" API.
 
 o	It makes a GET request to the API, specifying the "Accept: application/json" header to receive the response in JSON format.
@@ -178,7 +178,7 @@ o	Renders a button that calls the saveJoke function when clicked.
 
 Favourites.js
 
-This file contains the component responsible for rendering the favorites page of the application. It displays the saved jokes and provides options to remove, edit, and add new jokes.
+This file contains the component responsible for rendering the favourites page of the application. It displays the saved jokes and provides options to remove, edit, and add new jokes.
 
 -	The useState hook is imported from React to manage the state of various variables.
 -	The CSS styles from Favourites.css are imported to style the component.
@@ -187,9 +187,9 @@ This file contains the component responsible for rendering the favorites page of
 The Favourites component:
 
 -	Receives the savedJokes and setSavedJokes props from the parent component.
--	Declares the checkedJokes state variable and the setCheckedJokes function using the useState hook. It initializes checkedJokes as an empty array.
--	Declares the newJoke state variable and the setNewJoke function using the useState hook. It initializes newJoke as an empty string.
--	Declares the editingJoke state variable and the setEditingJoke function using the useState hook. It initializes editingJoke as an empty string.
+-	Declares the checkedJokes state variable and the setCheckedJokes function using the useState hook. It initialises checkedJokes as an empty array.
+-	Declares the newJoke state variable and the setNewJoke function using the useState hook. It initialises newJoke as an empty string.
+-	Declares the editingJoke state variable and the setEditingJoke function using the useState hook. It initialises editingJoke as an empty string.
 -	Defines the handleNewJokeChange function, which updates the newJoke state when the input field for adding a new joke changes.
 -	Defines the saveNewJoke function, which adds the new joke to the savedJokes state.
 
@@ -233,14 +233,14 @@ o	The new value is assigned to the element at the index editingJoke.
 o	The setSavedJokes function is called with the new array to update the state.
 
 -	Defines the handleSaveJoke function, which clears the editingJoke state, indicating that the joke editing is complete.
--	Renders the main structure of the favorites page inside a <div> element with the class name "Favourites".
+-	Renders the main structure of the favourites page inside a <div> element with the class name "Favourites".
 -	Renders an input field for adding a new joke, with the handleNewJokeChange function handling the value change.
 -	Renders a button with the class name "save-button", which triggers the saveNewJoke function when clicked.
 -	Checks if there are any saved jokes (savedJokes.length > 0), and if so, renders them.
 
 o	Iterates over the savedJokes array using the map function.
 
-o	For each joke, renders a list item (<li>) with a checkbox, the joke text, and buttons for editing or deleting the joke.
+o	For each joke, it renders a list item (<li>) with a checkbox, the joke text, and buttons for editing or deleting the joke.
 
 o	The checked attribute of the checkbox is set based on whether the checkedJokes array includes the current index.
 
@@ -252,7 +252,7 @@ o	If the editingJoke state does not match, it renders the joke text and a button
 
 
 
-Challenges
+Challenges and wins
 
 I struggled very much with the saved page and its associated functions - however most challenging was probably getting the check boxes applied to each joke to listen to only their joke, and not the rest of the jokes. For example, for a while, every time I clicked on one check box, they would all get marked. Furthermore, when this issue was fixed, I was still unable to only delete the ones that had been marked. 
 
@@ -260,21 +260,21 @@ Adding sound bites were also very challenging. Both this and adding additional c
 
 I faced some difficulty with CSS styling as well.
 
-
 Most of these challenges I managed to solve by going through old course notes, previous homeworks and exercises, and researching on websites such as W3, YouTube, GeeksForGeeks, and CodeBrainer. I was also able to draw on the experience of my classmates and tutors.
+
+I was very pleased to achieve full CRUD (Create Update and Delete) as it was the first time I had ever achieved this in a project. 
 
 Key Learnings/Takeaways
 
-Key learnings for me were how to effectively navigate across multiple pages, and import different css codes for different elements. These proved to be challenging at first, however I feel thaT i now have the hand of it. 
+Key learnings for me were how to effectively navigate across multiple pages, and import different css codes for different elements. These proved to be challenging at first, however I am now confident in importing different css codes for corresponding pages. 
 
 Bugs
 
-As mentioned previously, there was a case where by I was unable to get the checkboxes to properly listen to the user interactions, and this persisted even after It appeared that I had solved the issues. Thankfully, it seems to be fixed for now. 
+As mentioned previously, there was a case where was unable to get the checkboxes to properly listen to the user interactions, and this persisted even after It appeared that I had solved the issues. Thankfully, it seems to be fixed for now. 
 
 Future Improvements
 
 I will want to include a second API function in one of the empty pages I have included in this app - such as generating random fun facts for the user. I will also include a copy of the ReadMe in the 'About' section once I am happy with the text.  
-
 
 
 
