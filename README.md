@@ -1,10 +1,10 @@
-Dad Joke Generator – ReadMe
+**Dad Joke Generator – ReadMe
+**
 
-
-ReadMe Project Two: API 'Dad Jokes'
-
-Description
-
+**ReadMe Project Two: API 'Dad Jokes'
+**
+**Description
+**
 This is a simple app that allows users to randomly generate one of 5,000 'dad jokes' from an API. If the user likes the joke, they can save it to a list featured on another page within the app (called 'Saved') or simply generate a new joke to replace it. When the User navigates to the 'Saved' page, they are presented with a list of all the jokes they have saved from the previous page. 
 
 The User can also upload their own joke to this page and edit both the randomly generated saved joke and their own if they so choose. 
@@ -12,17 +12,17 @@ The User can also upload their own joke to this page and edit both the randomly 
 If the user wishes to remove an individual joke, multiple jokes, or all the jokes from the list, there are options available that will allow them to do this. For example, there is a 'Remove Selected' button, and a 'Remove All' button. 
 
 
-Deployment link
-
+**Deployment link
+**
 TO BE UPDATED ONCE DEPLOYED
 
-Timeframe & Working Team
-
+**Timeframe & Working Team
+**
 The game was entirely worked on by me over approximately a week. Occasionally I would have a second pair of eyes look over certain sections to help debug and find where certain issues were, however this was minimal. 
 
 
-Technologies Used
-
+**Technologies Used
+**
 The following technologies were used throughout the process:
 HTML 
 CSS 
@@ -34,8 +34,8 @@ jspaint.app
 API
 https://icanhazdadjoke.com/api#fetch-a-random-dad-joke
 
-Brief
-
+**Brief
+**
 The following brief was given to me to work from:
 
 General
@@ -69,8 +69,8 @@ User Stories:
 -	As a user, I should be able to remove individual, several, or all jokes from the 'Saved' page
 
 
-Planning
-
+**Planning
+**
 I started by sketching out a basic wireframe using a very basic paint app, and then proceeded to create my vision using very basic HTML and CSS. My belief was that if I could see everything visualised on the screen, it would be easier to create the necessary JavaScript that would interact with everything. 
 
 The wireframes for the two main pages can be seen below (Please Note, when I started, I was intending to have randomly generated facts, but came to the conclusion that jokes would be more interesting - hence why some of the labels in these images are incorrect):
@@ -88,8 +88,8 @@ Wireframe Saved Page
 
 
 
-My Code
-
+**My Code
+**
 Build/Code Process
 
 The main approach I took for this game was to build out the static HTML and CSS on all the pages so I would be able to visualise everything on the screen.
@@ -252,8 +252,8 @@ o	If the editingJoke state does not match, it renders the joke text and a button
 
 
 
-Challenges and wins
-
+**Challenges and wins
+**
 I struggled very much with the saved page and its associated functions - however most challenging was probably getting the check boxes applied to each joke to listen to only their joke, and not the rest of the jokes. For example, for a while, every time I clicked on one check box, they would all get marked. Furthermore, when this issue was fixed, I was still unable to only delete the ones that had been marked. 
 
 Adding sound bites were also very challenging. Both this and adding additional content such as another API will be attempted when I readdress this project.
@@ -270,7 +270,7 @@ Key learnings for me were how to effectively navigate across multiple pages, and
 
 Bugs
 
-As mentioned previously, there was a case where was unable to get the checkboxes to properly listen to the user interactions, and this persisted even after It appeared that I had solved the issues. Thankfully, it seems to be fixed for now. 
+As mentioned previously, there was a case where I was unable to get the checkboxes to properly listen to the user interactions, and this persisted even after It appeared that I had solved the issues. Thankfully, it seems to be fixed for now. 
 
 Future Improvements
 
