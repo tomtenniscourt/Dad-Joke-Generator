@@ -260,7 +260,7 @@ o	The setSavedJokes function is called with the new array to update the state.
 
 o	Iterates over the savedJokes array using the map function.
 
-o	For each joke, it renders a list item (<li>) with a checkbox, the joke text, and buttons for editing or deleting the joke.
+o	For each joke, it renders a list item with a checkbox, the joke text, and buttons for editing or deleting the joke.
 
 o	The checked attribute of the checkbox is set based on whether the checkedJokes array includes the current index.
 
