@@ -131,8 +131,9 @@ File Structure
 
 -	CSS pages are then used to provide the visuals. 
 
-**App.js
-**
+
+**App.js**
+
 This file serves as the entry point of the application. It imports necessary dependencies, components, and styles. The App component is exported as the default export.
 
 -	The useState hook from React is imported to manage the state of the saved jokes.
@@ -141,8 +142,8 @@ This file serves as the entry point of the application. It imports necessary dep
 -	The Homepage, Favourites, AdditionalContent, and About components are imported as the pages of the application.
 -	The CSS styles from App.css are imported to style the App component.
 
-**The App component
-**
+**The App Component**
+
 -	Declares the savedJokes state variable and the setSavedJokes function using the useState hook. It initialises savedJokes as an empty array.
 -	Renders the main structure of the application inside a <div> element with the class name "App".
 -	Renders the NavBar component to display the navigation bar.
@@ -161,16 +162,16 @@ o	The element prop passes the savedJokes state and setSavedJokes function as pro
 -	The AdditionalContent component is rendered when the path is /AdditionalContent, passing only the setSavedJokes function as a prop.
 -	The About component is rendered when the path is /About.
 
-**Homepage.js
-**
+**Homepage.js**
+
 This file contains the component responsible for rendering the homepage of the application. It displays a random dad joke and provides options to save jokes to the favourites page.
 
 -	The useState hook is imported from React to manage the state of the joke.
 -	The CSS styles from Homepage.css are imported to style the component.
 -	The Homepage component is exported as the default export, accepting the savedJokes and setSavedJokes props.
 
-**The Homepage component:
-**
+**The Homepage Component**
+
 -	Declares the joke state variable and the setJoke function using the useState hook. It initialises the joke as an empty string.
 -	Defines the generateJoke function, which fetches a random dad joke from the "https://icanhazdadjoke.com/" API.
 
@@ -195,16 +196,16 @@ o	The joke text is displayed inside a <p> element with the class name "jokeText"
 
 o	Renders a button that calls the saveJoke function when clicked.
 
-**Favourites.js
-**
+**Favourites.js**
+
 This file contains the component responsible for rendering the favourites page of the application. It displays the saved jokes and provides options to remove, edit, and add new jokes.
 
 -	The useState hook is imported from React to manage the state of various variables.
 -	The CSS styles from Favourites.css are imported to style the component.
 -	The Favourites component is exported as the default export, accepting the savedJokes and setSavedJokes props.
 
-**The Favourites component:
-**
+**The Favourites Component**
+
 -	Receives the savedJokes and setSavedJokes props from the parent component.
 -	Declares the checkedJokes state variable and the setCheckedJokes function using the useState hook. It initialises checkedJokes as an empty array.
 -	Declares the newJoke state variable and the setNewJoke function using the useState hook. It initialises newJoke as an empty string.
@@ -291,8 +292,8 @@ Key learnings for me were how to effectively navigate across multiple pages, and
 
 As mentioned previously, there was a case where I was unable to get the checkboxes to properly listen to the user interactions, and this persisted even after It appeared that I had solved the issues. Thankfully, it seems to be fixed for now. 
 
-**Future Improvements
-**
+**Future Improvements**
+
 
 I will want to include a second API function in one of the empty pages I have included in this app - such as generating random fun facts for the user. I will also include a copy of the ReadMe in the 'About' section once I am happy with the text.  
 
