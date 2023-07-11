@@ -87,11 +87,11 @@ The wireframes for the two main pages can be seen below (Please Note, when I sta
 
 
 
-Wireframe Home Page:
+**Wireframe Home Page**
 
 ![image](https://media.git.generalassemb.ly/user/48202/files/11565329-be5b-4376-b32f-c5a7ae587249)
 
-Wireframe Saved Page
+**Wireframe Saved Page**
 
 ![image](https://media.git.generalassemb.ly/user/48202/files/466ef5c9-d861-400b-ac84-76a975d24622)
 
