@@ -26,19 +26,14 @@ export default function Homepage({ savedJokes, setSavedJokes }) {
     <div className="page">
       <h1>Tom's Dad Joke Generator</h1>
       <p className="homepage-text">
-        Hello! Get ready to laugh, groan, or cringe! The Dad Joke Depot is
-        everything missing in your life.
-        <br />
-        <br />
-        Simply press the <span>BUTTON</span> below to randomly generate a
+        Press the <span>BUTTON</span> below to randomly generate a
         thigh-slapping cracker straight to your screen.
         <br />
         <br />
         Like what you see? Save the joke to your Favourites list!
         <br />
         <br />
-        Are you a dad? Do you live to serve endless cringe? Upload your own
-        jokes on the next page!
+        Are you a dad? Upload your own jokes on the next page!
         <br />
       </p>
       <button className="jokeGenerator" onClick={generateJoke}>
