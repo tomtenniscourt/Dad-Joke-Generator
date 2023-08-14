@@ -6,6 +6,7 @@ import About from "./About";
 import NavBar from "./NavBar";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import "./NavBar";
 
 export default function App() {
   const [savedJokes, setSavedJokes] = useState([]);

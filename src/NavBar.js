@@ -7,15 +7,15 @@ export default function NavBar() {
       <Link to="/" style={{ color: "darkblue" }}>
         Home
       </Link>
-      &nbsp; | &nbsp;
+      {/* &nbsp; | &nbsp; */}
       <Link to="/Favourites" style={{ color: "darkblue" }}>
         Saved
       </Link>
-      &nbsp; | &nbsp;
+      {/* &nbsp; | &nbsp; */}
       <Link to="/AdditionalContent" style={{ color: "darkblue" }}>
         Additional Content
       </Link>
-      &nbsp; | &nbsp;
+      {/* &nbsp; | &nbsp; */}
       <Link to="/About" style={{ color: "darkblue" }}>
         About
       </Link>
