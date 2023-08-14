@@ -1,34 +1,71 @@
-.homepage-text {
-    font-size: 20px;
-    margin-left: 600px;
-    margin-right: 600px;
-    text-align: justify;
+/* Reset some default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
 }
 
-span {
-    color: #ff9900;
-    font-weight: bold;
+/* Set a consistent font family and text color */
+body {
+    font-family: 'Courier New', cursive;
+    color: #333;
 }
+
+/* Center the entire content */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style the header */
+h1 {
+    font-size: 48px;
+    text-align: center;
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: turquoise;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the homepage text */
+.homepage-text {
+    font-size: 20px;
+    text-align: justify;
+    max-width: 100%;
+}
+
+/* Style the joke container */
 .joke-border {
     border: 5px solid whitesmoke;
     border-radius: 12px;
     padding: 20px;
-    margin: 100px;
-    margin-top: 30px;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin: 20px 0;
     background-color: turquoise;
     box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
-    }
-
-.jokeText {
-font-family: 'Courier New', cursive;
-font-size: 20px;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
 }
 
+/* Style the joke text */
+.jokeText {
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Style buttons */
 button {
-width: 150px;
+    width: 150px;
     height: 75px;
     border-radius: 10px;
     background-color: #ff9900;
@@ -55,6 +92,7 @@ width: 150px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Style button hover and active effects */
 button:hover {
     background-color: #ffcc66;
     transform: translateY(-2px);
@@ -66,4 +104,23 @@ button:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .page {
+        padding: 10px;
+    }
 
+    h1 {
+        font-size: 36px;
+    }
+
+    .homepage-text {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .joke-border {
+        margin: 10px 0;
+    }
+}
