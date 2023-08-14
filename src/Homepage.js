@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./";
 import "./Homepage.css";
+import reportWebVitals from "./reportWebVitals";
 
 export default function Homepage({ savedJokes, setSavedJokes }) {
   const [joke, setJoke] = useState("");
@@ -24,9 +25,9 @@ export default function Homepage({ savedJokes, setSavedJokes }) {
 
   return (
     <div className="page">
-      <h1>Tom's Dad Joke Depot</h1>
+      <h1>Tom's Dad Joke Generator</h1>
       <p class="homepage-text">
-        Get ready to laugh, groan, or cringe! The Dad Joke Depot is everything
+        Hello! Get ready to laugh, groan, or cringe! The Dad Joke Depot is everything
         missing in your life.
         <br />
         <br />
