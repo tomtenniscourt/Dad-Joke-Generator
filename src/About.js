@@ -46,8 +46,15 @@ export default function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-            link</a>
+              link
+            </a>
           </li>
+          <br />
+          <br />
+          The 'Dad Joke Generator' is the second application I have build, in
+          early April 2023. The design is simple and quite frankly, ugly.
+          However, I have elected to keep it this way to show my progress when
+          compared to later applications.
         </p>
       </div>
     </div>

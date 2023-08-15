@@ -9,7 +9,7 @@ export default function NavBar() {
       </Link>
       {/* &nbsp; | &nbsp; */}
       <Link to="/Favourites" style={{ color: "darkblue" }}>
-        Saved
+        Favourites
       </Link>
       {/* &nbsp; | &nbsp; */}
       <Link to="/AdditionalContent" style={{ color: "darkblue" }}>

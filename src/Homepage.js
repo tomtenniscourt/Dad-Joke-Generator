@@ -26,17 +26,19 @@ export default function Homepage({ savedJokes, setSavedJokes }) {
     <div className="page">
       <h1>Dad Joke Generator</h1>
       <div className="hello">
-      <p className="homepage-text">
-        Press the <span>BUTTON</span> below to randomly generate a
-        thigh-slapping cracker straight to your screen.
-        <br />
-        <br />
-        Like what you see? Save the joke to your Favourites list!
-        <br />
-        <br />
-        Are you a dad? Upload your own jokes on the next page!
-        <br />
-      </p></div>
+        <p className="homepage-text" style={{ textAlign: "center" }}>
+          Press the <span>BUTTON</span> below to randomly generate a
+          thigh-slapping cracker straight to your screen.
+          <br />
+          <br />
+          Like what you see? Save the joke to your Favourites list!
+          <br />
+          <br />
+          Are you a dad? Upload your own jokes on the next page!
+          <br />
+          <br />
+        </p>
+      </div>
       <button className="jokeGenerator" onClick={generateJoke}>
         Joke Button
       </button>

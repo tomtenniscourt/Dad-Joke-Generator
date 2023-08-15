@@ -96,6 +96,10 @@ button:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.hello {
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .page {
         padding: 10px;

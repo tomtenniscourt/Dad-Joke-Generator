@@ -20,7 +20,7 @@ body {
 .page {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: justify;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -51,7 +51,7 @@ h1 {
 .about-content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    text-align: justify;
     padding: 20px;
     border: 5px solid whitesmoke;
     border-radius: 12px;
