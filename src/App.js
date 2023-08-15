@@ -13,8 +13,9 @@ export default function App() {
 
   return (
     <div className="App">
+      <head>
       <title>Dad Joke Generator</title>
-
+      </head>
       <NavBar />
       <Routes>
         <Route
