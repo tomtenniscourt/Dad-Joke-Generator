@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Homepage from "./Homepage";
 import Favourites from "./Favourites";
 import AdditionalContent from "./AdditionalContent";
@@ -6,13 +7,14 @@ import About from "./About";
 import NavBar from "./NavBar";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import "./NavBar";
 
 export default function App() {
   const [savedJokes, setSavedJokes] = useState([]);
 
   return (
     <div className="App">
+      <title>Dad Joke Generator</title>
+
       <NavBar />
       <Routes>
         <Route
