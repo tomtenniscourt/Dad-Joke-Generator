@@ -12,7 +12,7 @@ If the user wishes to remove an individual joke, multiple jokes, or all the joke
 
 ## Deployment link
  
-TO BE UPDATED ONCE DEPLOYED
+https://dad-joke-generator-phi.vercel.app/
 
 ## Timeframe & Working Team
 
