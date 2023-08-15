@@ -90,7 +90,7 @@ export default function Favourites(props) {
                 ) : (
                   <>
                     <span>{joke}</span>
-                    <button onClick={() => handleEditJoke(index)}>Edit</button>
+                    <button className="edit" onClick={() => handleEditJoke(index)}>Edit</button>
                   </>
                 )}
               </li>

@@ -1,4 +1,3 @@
-/* Reset some default margin and padding */
 body,
 h1,
 h2,
@@ -10,13 +9,11 @@ li {
     padding: 0;
 }
 
-/* Set a consistent font family and text color */
 body {
     font-family: 'Courier New', cursive;
     color: #333;
 }
 
-/* Center the entire content */
 .page {
     display: flex;
     flex-direction: column;
@@ -26,7 +23,6 @@ body {
     margin: 0 auto;
 }
 
-/* Style the header */
 h1 {
     font-size: 48px;
     text-align: center;
@@ -39,14 +35,13 @@ h1 {
     box-shadow: 0 4px 80px rgba(0, 0, 0, 0.2);
 }
 
-/* Style the homepage text */
 .homepage-text {
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     max-width: 100%;
+    margin: 0 auto;
 }
 
-/* Style the joke container */
 .joke-border {
     border: 5px solid whitesmoke;
     border-radius: 12px;
@@ -57,13 +52,11 @@ h1 {
     text-align: center;
 }
 
-/* Style the joke text */
 .jokeText {
     font-size: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Style buttons */
 button {
     width: 150px;
     height: 75px;
@@ -92,7 +85,6 @@ button {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Style button hover and active effects */
 button:hover {
     background-color: #ffcc66;
     transform: translateY(-2px);
@@ -104,7 +96,6 @@ button:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Add media query for smaller screens */
 @media screen and (max-width: 768px) {
     .page {
         padding: 10px;
@@ -112,6 +103,8 @@ button:active {
 
     h1 {
         font-size: 36px;
+        padding: 10px;
+        margin: 10px 0;
     }
 
     .homepage-text {
