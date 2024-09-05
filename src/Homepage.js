@@ -27,7 +27,7 @@ export default function Homepage({ savedJokes, setSavedJokes }) {
       <h1>Tom's Dad Joke Generator</h1>
       <div className="hello">
         <p className="homepage-text" style={{ textAlign: "center" }}>
-          Press the <span>BUTTON</span> below to randomly generate a
+          Press the <span>BUTTON</span> below to generate a
           random dad joke straight to your screen.
           <br />
           <br />
