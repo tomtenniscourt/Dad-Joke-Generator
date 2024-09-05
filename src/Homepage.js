@@ -28,7 +28,7 @@ export default function Homepage({ savedJokes, setSavedJokes }) {
       <div className="hello">
         <p className="homepage-text" style={{ textAlign: "center" }}>
           Press the <span>BUTTON</span> below to randomly generate a
-          thigh-slapping cracker straight to your screen.
+          random dad joke straight to your screen.
           <br />
           <br />
           Like what you see? Save the joke to your Favourites list!
