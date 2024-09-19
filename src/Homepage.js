@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Homepage.css";
-import reportWebVitals from "./reportWebVitals";
 
 export default function Homepage({ savedJokes, setSavedJokes }) {
   const [joke, setJoke] = useState("");
@@ -34,7 +33,7 @@ export default function Homepage({ savedJokes, setSavedJokes }) {
           Like what you see? Save the joke to your Favourites list!
           <br />
           <br />
-          Are you a dad? Upload your own jokes on the next page!
+          Are you a dad joke creator? Upload your own jokes on the next page!
           <br />
           <br />
         </p>
